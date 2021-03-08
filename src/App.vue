@@ -1,28 +1,38 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <header>
+      <h1>Liang Yan's Amazing Zi Char Store</h1>
+    </header>
+
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  name: "App",
+  data() {
+    return {};
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+header {
+  background-color: aquamarine;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-size: 20px;
+  font-style: italic;
+  font-family: Verdana;
+  padding: 10px;
+}
+
+.tabs {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #222;
+  margin: 10px;
+  width: 30%;
+  display: inline-block;
 }
 </style>
